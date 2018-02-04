@@ -1,0 +1,83 @@
+/* code: css clocks */
+#clockanalog { 
+float: left; 
+height: 121px; 
+margin: 0; 
+overflow: hidden; 
+position: relative; 
+width: 121px; 
+}
+
+#analoghour {
+float: left; 
+height: 121px; 
+margin: 0; 
+overflow: hidden; 
+position: absolute; 
+width: 121px; 
+}
+#analogsecond {
+float: left; 
+height: 121px; 
+margin: 0; 
+overflow: hidden; 
+position: absolute; 
+width: 121px; 
+}
+#analogminute{
+float: left; 
+height: 121px; 
+margin: 0; 
+overflow: hidden; 
+position: absolute; 
+width: 121px; 
+}
+
+
+#svg4048 {
+width:120px;
+height:120px
+}
+
+#svg4315 {
+width:120px;
+height:120px
+}
+
+
+#clockanalog img { 
+border: 0; 
+left: 0px; 
+position: absolute; 
+top: 0px; 
+}
+
+/* #clockanalog img { border: 0; left: 9px; position: absolute; top: 9px; }*/
+
+#clockdigital {
+background: url("images/digital.gif") no-repeat 162px 99px;
+float: right;
+height: 58px;
+margin: 0;
+overflow: hidden;
+padding: 0;
+position: relative;
+width: 485px;
+
+
+}
+ #clockdigital div { background: #444444; height: 17px; position: absolute; width: 485px; }
+#clockdigital div:last-child { bottom: 0; }
+
+#clockdigital img {
+border: 0;
+display: block;
+height: 600px;
+left: -120px;
+margin: 0;
+padding: 0;
+position: absolute;
+top: -270px;
+width: 600px;
+}
+
