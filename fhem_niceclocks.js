@@ -267,7 +267,12 @@ if(typeof f18_sd !=="undefined") {
 		logo.style.height = "0px";
 	}
 	else {
-		hdr.style.left="164px";
+		
+		$("#hdr").css("left", (parseInt($("div#menu").width())+20)+"px");
+		var w=$(window).width();
+		var diff = 0;
+		diff += parseInt($("div#menu").width())+20;
+		$("input.maininput").css("width", (w-(FW_isiOS ? 40 : 30)-diff)+'px');
 	}
 }
 	
@@ -385,19 +390,16 @@ svg = '<svg \
     
 	oClockAnalog = initAnalog();
 	oClockAnalog.fInit(); 
-	document.getElementById('ncDate').style.paddingTop="130px";	
-    document.getElementById('menu').style.top="240px";
+	document.getElementById('menu').style.top="240px";
 	}
 else {
-	document.getElementById('logo').innerHTML='<div id="clockdigital"><img src="/fhem/niceclocks/images/digitalhours.gif" id="digitalhour"/><img src="/fhem/niceclocks/images/digitalminutes.gif" id="digitalminute"/><img src="/fhem/niceclocks/images/digitalseconds.gif" id="digitalsecond"/><div style="opacity: 0.8;">&nbsp;</div><div style="opacity: 0.8;">&nbsp;</div></div><div id="ncDate">'+getDatum()+'</div>';	
+	document.getElementById('logo').innerHTML='<div id="clockdigital"><img src="/fhem/niceclocks/images/digitalhours.gif" id="digitalhour"/><img src="/fhem/niceclocks/images/digitalminutes.gif" id="digitalminute"/><img src="/fhem/niceclocks/images/digitalseconds.gif" id="digitalsecond"/><div style="opacity: 0.8;">&nbsp;</div><div style="opacity: 0.8;">&nbsp;</div></div><div id="ncDateD">'+getDatum()+'</div>';	
 	oClockDigital = initDigital();
 	oClockDigital.fInit(); 
-	document.getElementById('ncDate').style.paddingTop="80px";	
 	document.getElementById('menu').style.top="180px";
 	}
 
-document.getElementById('ncDate').style.fontSize="medium";
-document.getElementById('ncDate').style.fontWeight="normal";
+
 
 }
 

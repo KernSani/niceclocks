@@ -81,3 +81,18 @@ top: -270px;
 width: 600px;
 }
 
+div#ncDate {
+	padding-top: 130px;
+	font-size: medium;
+	font-weight: normal;
+}
+div#ncDateD {
+	padding-top: 80px;
+	font-size: medium;
+	font-weight: normal;
+}
+div#ncDate p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
